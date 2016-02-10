@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <title>test</title>
+
+</head>
+
+<body>
+
+<h1>
+What is your favorite food?
+</h1>
+
+<button id="pizza">pizza</button>
+<button id="water">water</button>
+<button id="cookies">cookies</button>
+
+<h2 id="winner">hi</h2>
+
+<script type="text/javascript">
+var userChoice;
+
+document.getElementById('pizza').onClick=function(){
+userChoice="pizza";
+food();
+}
+document.getElementById('water').onClick=function(){
+userChoice="water";
+food();
+}
+document.getElementById('cookies').onClick=function(){
+userChoice="cookies";
+food();
+}
+
+function food(){
+if (userChoice==="pizza"){
+document.getElementById("winner").innerHTML="That's italian";
+} else if (userChoice==="water"){
+document.getElementById("winner").innerHTML="That's wet";
+} else{
+document.getElementById("winner").innerHTML="That's sweet";
+}
+}
+</script>
+
+</body>
+</html>
